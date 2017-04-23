@@ -12,8 +12,9 @@ namespace DiskInfo
         static void Main(string[] args)
         {
             ChannelFactory<IDiskInfo> factory =
-            new ChannelFactory<IDiskInfo>(new WSHttpBinding(),
-            new EndpointAddress("http://localhost:8081/DiskInfo"));
+            //new ChannelFactory<IDiskInfo>(new WSHttpBinding(),
+            new ChannelFactory<IDiskInfo>(new NetTcpBinding(),
+            new EndpointAddress("net.tcp://localhost:8081/DiskInfo"));
             IDiskInfo channel = factory.CreateChannel();
             string address = @"D:\";
             string[] results = channel.GetDiskInfo(address);

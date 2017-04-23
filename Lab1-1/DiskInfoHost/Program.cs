@@ -12,7 +12,9 @@ namespace DiskInfoHost
         {
             ServiceHost sh = new
             ServiceHost(typeof(DiskInfo));
-            sh.AddServiceEndpoint(typeof(IDiskInfo), new WSHttpBinding(), "http://localhost:8081/DiskInfo");
+            sh.AddServiceEndpoint(typeof(IDiskInfo),
+//          new WSHttpBinding(), "http://localhost:8081/DiskInfo");
+            new NetTcpBinding(), "net.tcp://localhost:8081/DiskInfo");
             sh.Open();
             Console.WriteLine("Для завершения нажмите < ENTER >\n");
             Console.ReadLine();
