@@ -17,11 +17,11 @@ namespace DiskInfoHost
                 string[] files = Directory.GetFiles(path);
                 foreach (var dir in dirs)
                 {
-                    dirsAndFiles.Add("DIRECTORY\t" + Path.GetFileName(dir));
+                    dirsAndFiles.Add("Dir " + Path.GetFileName(dir));
                 }
                 foreach (var file in files)
                 {
-                    dirsAndFiles.Add("FILE\t" + Path.GetFileName(file));
+                    dirsAndFiles.Add("File " + Path.GetFileName(file));
                 }
                 return dirsAndFiles.ToArray();
             }

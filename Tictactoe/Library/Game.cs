@@ -1,21 +1,28 @@
-﻿namespace Library
+﻿using System.Runtime.Serialization;
+
+namespace Library
 {
+    [DataContract]
     public class Game
     {
-        //public bool IsWin { get; set; }
-        private MarkType[] _Results;
+        public enum GameStatesEnum { WaitFirstPlayer, WaitSecondPlayer, FirstPlayer, SecondPlayer, EndOfGame };
+        public enum FieldStatesEnum { Free, Cross, Zero };
 
-        private bool _Player1Turn;
-        private bool _GameEnded;
+        [DataMember]
+        public GameStatesEnum state;
+        [DataMember]
+        public string firstPlayer;
+        [DataMember]
+        public string secondPlayer;
+        [DataMember]
+        public string currentPlayer;
+        [DataMember]
+        public FieldStatesEnum[] field;
 
-        public void NewGame()
+        public Game()
         {
-            _Results=new MarkType[9];
-            for (int i = 0; i < _Results.Length; i++)
-            {
-                _Results[i]=MarkType.Free;
-                _Player1Turn = true;
-            }
+            field = new FieldStatesEnum[9];
+            state = GameStatesEnum.WaitFirstPlayer;
         }
     }
 }
