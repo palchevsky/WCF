@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15ef3604-fdfa-4ddf-8855-f873904c310e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8005/WcfServiceLibrary/Converter/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="baa012f0-aef2-422b-9153-ab4984a10073" SourceId="1" SourceUrl="http://localhost:8005/WcfServiceLibrary/Converter/?xsd=xsd2" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="6f027abe-7e1b-4c88-b5ea-024154725396" SourceId="1" SourceUrl="http://localhost:8005/WcfServiceLibrary/Converter/?xsd=xsd1" />
+    <MetadataFile FileName="Converter1.wsdl" MetadataType="Wsdl" ID="3bd81e24-432d-495f-9e25-15c698c2392a" SourceId="1" SourceUrl="http://localhost:8005/WcfServiceLibrary/Converter/?wsdl" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="75edd7ab-010a-4d1f-9570-2ffc26dc1a2b" SourceId="1" SourceUrl="http://localhost:8005/WcfServiceLibrary/Converter/?disco" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="3c5bd666-6fac-4647-b922-6a87e1385052" SourceId="1" SourceUrl="http://localhost:8005/WcfServiceLibrary/Converter/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
